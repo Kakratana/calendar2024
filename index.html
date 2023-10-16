@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 10px 2px 2px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>កំណត់ត្រាចែក​ប្រតិទិន២០១៤</h2>
+<p>ក្នុងគោលបំណងប្រមូលទិន្នន័យនៃការចែកប្រតិទិនជូនអតិថិជន សូមបញ្ចូលព័ត៌មានក្នុងទម្រង់ខាងក្រោមរាល់ពេលផ្តល់ប្រតិទិន។</p>
+
+<div class="container">
+  <form action="https://api.sheetmonkey.io/form/6KLNjWxnNhEWUHqbAxfjjr" method="post">
+    <div class="row">
+		<input type="hidden" name="កាល​បរិច្ឆេទ" value="x-sheetmonkey-current-date-time" />
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">សាខា</label>
+      </div>
+      <div class="col-75">
+			<select name="សាខា" id="brand">
+				<option value="ការិយាល័យ​កណ្តាល">ការិយាល័យ​កណ្តាល</option>
+				<option value="បឹងកុក">បឹងកុក</option>
+				<option value="ព្រះវិហារ">ព្រះវិហារ</option>
+				<option value="សៀមរាប">សៀមរាប</option>
+				<option value="បាត់ដំបង">បាត់ដំបង</option>
+				<option value="ចំការលើ">ចំការលើ</option>
+				<option value="ស្ទឹងត្រែង">ស្ទឹងត្រែង</option>
+				<option value="បឹងកុក">បឹងកុក</option>
+			</select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">ឈ្មោះ​អ្នក​ទទួល</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="​អ្នក​ទទួល" placeholder="បញ្ចូល​ឈ្មោះ​អ្នក​ទទួល..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">លេខ​ទូរស័ព្ទ</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="លេខ​ទូរស័ព្ទ" placeholder="បញ្ចូល​លេខ​ទូរស័ព្ទអ្នក​ទទួល..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="address">អាសយដ្ឋាន</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="address" name="អាសយដ្ឋាន" placeholder="បញ្ចូលអាសយដ្ឋានអ្នក​ទទួល..">
+      </div>
+    </div>
+
+
+	<div class="row">
+      <div class="col-25">
+			<label>
+				ប្រភេទ​អ្នក​ទទួល
+			</label>
+      </div>
+		<div class="col-75">
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="ប្រភេទ" value="កសិករ">កសិករ</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="ប្រភេទ" value="ដេប៉ូ">ដេប៉ូ</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="ប្រភេទ" value="បុគ្គលិក">បុគ្គលិក​</input>
+			</label>
+			<label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="ប្រភេទ" value="ផ្សេងៗ">ផ្សេងៗ</input>
+			</label>			
+		</div>
+	</div>
+		
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">មតិយោបល់</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="មតិយោបល់" placeholder="មតិយោបល់.." style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="បញ្ចូល​ទិន្នន័យ">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
